@@ -25,14 +25,10 @@ const VideoPlayer: React.FC = () => {
 
   return (
     <div className="video-player-container">
-      <div className="video-header">
-        <h1>PRT Exercise Videos</h1>
-        <p className="video-counter">
-          {currentVideoIndex + 1} of {videos.length}
-        </p>
-      </div>
-
       <div className="video-main">
+        <div className="video-info">
+          <h2 className="exercise-title">{currentVideo.title}</h2>
+        </div>
         <div className="video-player-aspect">
           <iframe
             src={`https://www.youtube.com/embed/${currentVideo.id}?rel=0&modestbranding=1`}
@@ -43,9 +39,7 @@ const VideoPlayer: React.FC = () => {
             className="youtube-iframe"
           />
         </div>
-
         <div className="video-info">
-          <h2>{currentVideo.title}</h2>
           {showNotes && currentVideo.notes && (
             <div className="video-notes">
               <ul>
@@ -56,7 +50,6 @@ const VideoPlayer: React.FC = () => {
             </div>
           )}
         </div>
-
         <div className="video-controls always-visible">
           <button 
             className="control-btn prev-btn" 
@@ -82,7 +75,6 @@ const VideoPlayer: React.FC = () => {
           </button>
         </div>
       </div>
-
       <div className="video-playlist">
         <h3>Exercise Playlist</h3>
         <div className="playlist-items">

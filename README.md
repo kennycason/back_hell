@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+# Lower Back / Core PRT Plan
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![App Screenshot](./back_hell_app01.png)
 
-## Available Scripts
+A modern, beautiful React + TypeScript app for managing and following your personalized Physical Rehabilitation Therapy (PRT) plan. Watch exercise videos, view detailed notes, and keep your recovery on track!
 
-In the project directory, you can run:
+## Features
+- Embedded YouTube videos for each exercise
+- Playlist navigation with Previous/Next controls
+- Expandable notes for each exercise
+- Responsive, clean, and distraction-free UI
+- Designed for lower back and core rehab, but easily extensible
 
-### `npm start`
+## Getting Started
+1. Install dependencies:
+   ```sh
+   npm install
+   ```
+2. Start the development server:
+   ```sh
+   npm start
+   ```
+3. Build for production (served from `/back/`):
+   ```sh
+   npm run build
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## TODO / Ideas
+- [ ] Track/log workouts and activity (dates, sets, reps, notes)
+- [ ] Shuffle/randomize exercise order
+- [ ] Add more exercises and stretches
+- [ ] Group exercises into categories (e.g., Stretches, Strength, Mobility)
+- [ ] General info/education section (e.g., warm-up, cool-down, safety)
+- [ ] Log/View/Export workout logs
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## General Info
+- Built with [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- Styled for clarity and focus during rehab sessions
+- Easily customizable for any rehab or fitness plan
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+*Created for personal use and as a template for others in physical therapy or fitness journeys.*
